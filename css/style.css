@@ -1,0 +1,13 @@
+@charset "utf-8";
+:root {
+    --Fundo-geral: #caf0f8;
+    --botoes-destaques-links_ativos: #ff6f61;
+    --Detalhes-menus-bordas_suaves: #2d6a4f;
+    --Texto-principal: #2b2d42;
+    --hero-ou-rodape: #ffffff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
