@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*Estilos para impressora*/
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;900&family=Sriracha&display=swap');
+
+:root {
+    --Fundo-geral: #caf0f8;
+    --botoes-destaques-links_ativos: #ff6f61;
+    --Detalhes-menus-bordas_suaves: #2d6a4f;
+    --hero-ou-rodape: #ffffff;
+}
+
+* {
+    margin: 2px;
+    padding: 2px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+nav {
+    display: none;
+}
+
+/*Destinos popoulares*/
+#destinos {
+    display: none;
+}
+
+#destinos-populares .container {
+    text-align: center;
+}
+
+.pequena-descricao {
+    text-align: left;
+}
+
+
+/*hr*/
+hr {
+   display: none;
+    
+}
+
+/*Tabela de pacotes*/
+#pacotes-especiais h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+table {
+    max-width: 600px;
+    min-width: 300px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+/*Video*/
+#video {
+   display: none;
+ 
+
+}
+
+/*Dicas de viagens*/
+#dicas-viagens {
+    padding-bottom: 150px
+   
+}
+.aviao {
+    display: none;
+}
+
+/*Contactos*/
+#contacto {
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contacto h2{
+    margin-bottom: 20px;
+
+}
+
+li {
+    margin: 5px;
+    list-style: none;
+}
+
+/*Meu Github*/
+#contacto::after {
+    content: "Meu https://github.com/josemarmartins21";
+}
+
+/*footer*/
+footer {
+    display: none;
+}

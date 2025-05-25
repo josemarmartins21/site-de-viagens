@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViajaMais</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paisagem.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="css/retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="css/impressora.css" media="print">
 </head>
 <body>
     <header>
         <h1>ViajaMais</h1>
         <nav>
             <a href="#">Início</a>
-            <a href="#">Destinos</a>
-            <a href="#">Pacotes</a>
-            <a href="#">Dicas de Viagem</a>
-            <a href="#">Contato</a>
+            <a href="#destinos-populares">Destinos</a>
+            <a href="#pacotes-especiais">Pacotes</a>
+            <a href="#dicas-viagens">Dicas de Viagem</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
     <main>
         <section id="hero">
             <div id="section-hero">
                 <h1>Descubra os destinos dos seus sonhos</h1>
-                <h2>Pacotes incríveis, preços acessíveis e experiências inesquecíveis.</h2>
-                <div><a href="#">Explorar Destino</a></div>
+                <p>Pacotes incríveis, preços acessíveis e experiências inesquecíveis.</p>
+                <div><a href="#destinos-populares" id="destinos">Explorar Destinos</a></div>
             </div>
         </section>
         <section id="destinos-populares">
@@ -30,7 +32,7 @@
             <div class="container">
                 <div class="item">
                     <div class="imagem-do-destino">
-                        <img src="image/espanha.jpg" alt="imagem-da-espanha">
+                        <img src="image/turquia.jpg" alt="imagem-da-turquia">
                     </div>
                     <div class="nome">
                         <h3>Espanha</h3>
@@ -63,16 +65,16 @@
                 </div>
             </div>
         </section>
-        <hr>
+    
         <section id="pacotes-especiais">
             <h1>Pacotes especiais</h1>
             <table>
                 <thead>
                     <tr>
-                        <th scope="colgroup">Destino</th>
-                        <th scope="colgroup">Duração</th>
-                        <th scope="colgroup">Preço</th>
-                        <th scope="colgroup">Inclusões</th>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Duração</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Inclusões</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,13 +103,26 @@
         <section id="video">
 
             <h1>Assista e inspire-se!</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1Bj_HYHa1ug?si=1lvEdOQ0IUuOLxaS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            <iframe src="https://www.youtube.com/embed/1Bj_HYHa1ug?si=1lvEdOQ0IUuOLxaS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 <a href="https://www.youtube.com/watch?v=1Bj_HYHa1ug">2024 Travel Highlights | HDR</a>
             </iframe>
-            <p>Descrição: Veja como suas férias podem ser inesquecíveis</p>
         </section>
-        <section>
-            <p>Texto: Fale conosco para montar seu pacote personalizado.</p>
+
+        <section id="dicas-viagens">
+            <picture>
+                <source media="(max-width: 700px)" srcset="image/viagem.jpg">
+                <img src="image/aviao.png" alt="imagem-do-avião" class="aviao">
+            </picture>
+            <div class="conteudo">
+                <h1>Dicas de vigem</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci aliquam et facilis deserunt saepe consequuntur vero quod soluta sapiente, cum amet error architecto numquam itaque at consectetur. Dolore, quibusdam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam ullam ducimus provident enim. Quos modi aliquid dolorem ipsa, autem error! Culpa cumque esse sequi dolores impedit expedita praesentium cupiditate qui?</p>
+                <h1>O que levar</h1>
+                <p>                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloremque, quis iusto soluta omnis deleniti laudantium quo officiis minus praesentium, nemo veritatis voluptates! Vel obcaecati sit deserunt consequatur assumenda molestias.</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Fale conosco para montar seu pacote personalizado.</h2>
             <p>
                 <ul>
                     <li>E-mail: contato@viajamais.com</li>

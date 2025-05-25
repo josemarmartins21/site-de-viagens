@@ -1,14 +1,15 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto+Slab:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;900&family=Sriracha&display=swap');
+/*Estilos para tela*/
+
+
 
 :root {
     --Fundo-geral: #caf0f8;
     --botoes-destaques-links_ativos: #ff6f61;
     --Detalhes-menus-bordas_suaves: #2d6a4f;
-    --Texto-principal: #2b2d42;
     --hero-ou-rodape: #ffffff;
+    --Texto-principal: #2b2d42;
 }
 
 * {
@@ -18,6 +19,7 @@
 
 body {
     background-color: #ffffff;
+    
     
 }
 
@@ -31,31 +33,21 @@ header {
     top: 0;
     position: sticky;
     z-index: 1000;
+    color: var(--Detalhes-menus-bordas_suaves);
 }
 
 header h1 {
     font-variant: small-caps;
 }
 
-header  h1, nav a {
-   color: #2d6a4f;
+nav {
+    display: none;
 }
-
-nav a {
-    text-decoration: none;
-    padding: 7px;
-    margin: 5px;
-
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
+/*Secção hero*/
 section#hero {
     height: 95vh;
     background-color: peachpuff;
-    background-image: url(../image/hero.jpg);
+    background-image: url(../image/hero-portrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -66,18 +58,21 @@ section#hero {
 }
 
 div#section-hero {
-    max-width: 1000px;
     margin: auto;
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: ;
+    color: white;
 
 
 }
 
 div#section-hero > h1 {
-    font-size: 3.2em;
+    font-size: 1.5em;
+}
+
+#section-hero p {
+    font-size: ;
 }
 
 div#section-hero h1, div#section-hero h2, div#section-hero a {
@@ -104,33 +99,47 @@ div#section-hero h1, div#section-hero h2, div#section-hero a {
     background-color: var(--Detalhes-menus-bordas_suaves);
     transition: 0.8s;
 }
+
+/*Destinos popoulares*/
 #destinos-populares h1 {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    
 }
+
+#destinos-populares {
+    height: 700px;
+}
+
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    margin-bottom: 100px;
 
 }
 
 .item {
-    min-width: 280px;
-    margin: 10px;
+    min-width: 300px;
     background-color: #ffffff;
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.322);  
-    width: calc(32% - 10px);
-    transition: transform 0.3s ease;
+    width: calc(31% - 5px);
+    box-sizing: border-box;
+    
+    
 }
 
 .item:hover {
-    transform: scale(1.01);
+   outline: 2px solid rgba(0, 0, 0, 0.418);
+}
+
+.item h3 {
+    text-align: center;
 }
 
 .item .nome, .pequena-descricao p {
-    padding: 10px;
+    margin: 10px;
+    
 }
 
 .item img {
@@ -139,19 +148,21 @@ div#section-hero h1, div#section-hero h2, div#section-hero a {
 }
 
 .pequena-descricao p {
-    text-align: left;
+    text-align: start;
+    margin-bottom: 0px;
 }
 
+/*hr*/
 hr {
     width: 80%;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border: 3px solid var(--Detalhes-menus-bordas_suaves);
     padding: 2px;
     
 }
-
+/*Tabela de pacotes*/
 #pacotes-especiais h1 {
     text-align: center;
     padding-bottom: 20px;
@@ -169,3 +180,90 @@ td, th {
     border: 1px solid black;
     padding: 7px;
 }
+
+/*Video*/
+#video {
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+}
+#video h1 {
+    text-align: center;
+    padding: 20px;
+    
+}
+#video p {
+    padding: 20px;
+    padding-left: 0px;
+    font-size: 1.5em;
+}
+#video iframe {
+ max-width: 600px;
+ min-width: 200px;
+ height: 325px;
+ 
+
+}
+/*Contactos*/
+#contacto {
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contacto h2{
+    margin-bottom: 20px;
+
+}
+
+li {
+    margin: 5px;
+    list-style: none;
+}
+
+/*Dicas de viagens*/
+#dicas-viagens {
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.322);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+picture {
+    margin: auto;
+}
+.conteudo {
+    width: 450px;
+    padding: 20px;
+}
+
+.conteudo p, .conteudo h1 {
+    margin-top: 10px;
+}
+
+.aviao {
+    height: 200px;
+    display: inline-block;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--Texto-principal);
+    padding: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+/*tr:nth-child(even) {
+    background-color: var(--Detalhes-menus-bordas_suaves);
+}
+*/
