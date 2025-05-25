@@ -264,6 +264,15 @@ picture {
     display: none;   
 }
 
+a#meu-github {
+    text-decoration: none;
+    color: white;
+}
+
+a#meu-github:hover {
+    text-decoration: underline;
+}
+
 /*Footer*/
 footer {
     background-color: var(--Texto-principal);

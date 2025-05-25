@@ -231,7 +231,6 @@ li {
 #dicas-viagens {
     background-color: rgba(0, 0, 0, 0.322);
     display: flex;
-    align-items: center; 
     flex-direction: column;
     padding: 35px;
 }
@@ -251,6 +250,12 @@ li {
 .imagem-de-viagem-retrato {
       
 }
+
+a#meu-github {
+    text-decoration: none;
+    color: white;
+}
+
 
 /*Footer*/
 footer {
