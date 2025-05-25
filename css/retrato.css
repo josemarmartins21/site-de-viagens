@@ -236,12 +236,9 @@ li {
 #dicas-viagens {
     background-color: rgba(0, 0, 0, 0.322);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-picture {
-    margin: auto;
+    align-items: center; 
+    flex-direction: column;
+    padding: 35px;
 }
 .conteudo {
     width: 450px;
@@ -255,6 +252,10 @@ picture {
 .aviao {
     height: 200px;
     display: none;
+}
+
+.imagem-de-viagem-retrato {
+      
 }
 
 /*Footer*/
