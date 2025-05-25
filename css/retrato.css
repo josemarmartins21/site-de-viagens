@@ -50,7 +50,7 @@ section#hero {
     background-image: url(../image/hero-portrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: left bottom;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
