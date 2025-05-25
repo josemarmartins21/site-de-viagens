@@ -260,6 +260,10 @@ picture {
     display: inline-block;
 }
 
+.imagem-de-viagem-retrato {
+    display: none;   
+}
+
 /*Footer*/
 footer {
     background-color: var(--Texto-principal);
