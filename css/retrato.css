@@ -125,6 +125,7 @@ div#section-hero h1, div#section-hero h2, div#section-hero a {
     background-color: #ffffff;
     box-sizing: border-box;
     width: 80%;
+    margin: 5px;
     
     
 }
@@ -159,6 +160,12 @@ hr {
     
 }
 /*Tabela de pacotes*/
+
+#tabela-responsiva {
+    overflow-x: auto;
+    width: 50%;
+    margin: auto;
+}
 #pacotes-especiais h1 {
     text-align: center;
     padding-bottom: 20px;
