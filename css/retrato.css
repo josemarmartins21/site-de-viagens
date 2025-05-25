@@ -185,6 +185,7 @@ td, th {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    display: none;
 
 }
 #video h1 {
