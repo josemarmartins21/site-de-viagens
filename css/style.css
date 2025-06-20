@@ -33,6 +33,7 @@ header {
     top: 0;
     position: sticky;
     z-index: 1000;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.274);
 }
 
 header h1 {
@@ -69,13 +70,10 @@ section#hero {
 
 div#section-hero {
     max-width: 1000px;
-    margin: auto;
+    margin: 0px auto;
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: ;
-
-
 }
 
 div#section-hero > h1 {
@@ -132,6 +130,7 @@ div#section-hero h1, div#section-hero h2, div#section-hero a {
     background-color: #ffffff;
     width: calc(31% - 5px);
     box-sizing: border-box;
+    text-align: center;
     
     
 }
@@ -170,22 +169,39 @@ hr {
     
 }
 /*Tabela de pacotes*/
-#pacotes-especiais h1 {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 10px;
+section#pacotes-especiais {
+    margin-bottom: 350px;
 }
+
+section#pacotes-especiais h1 {
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+
 
 table {
-    max-width: 600px;
-    min-width: 300px;
-    border-collapse: collapse;
     margin: auto;
+    border-collapse: collapse;
+    width: 80%;
 }
 
-td, th {
-    border: 1px solid black;
+table tbody tr td, table thead tr th {
+    text-align: center;
     padding: 7px;
+}
+
+table tbody tr:hover  {
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+/*tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.308);
+
+}*/
+
+thead {
+    background-color: var(--Detalhes-menus-bordas_suaves);
+    color: white;
 }
 
 /*Video*/
@@ -255,10 +271,11 @@ picture {
     margin-top: 10px;
 }
 
-.aviao {
-    height: 200px;
-    display: inline-block;
+#mala {
+    display: none;
 }
+
+
 
 .imagem-de-viagem-retrato {
     display: none;   
@@ -283,7 +300,93 @@ footer p {
     text-align: center;
     color: white;
 }
-/*tr:nth-child(even) {
-    background-color: var(--Detalhes-menus-bordas_suaves);
+
+
+/*Estilos para telas menores*/
+@media screen and (max-width: 600px) {
+/*Header*/
+    nav {
+        display: none;
+    }
+
+/*hero*/
+    div#section-hero {
+        padding: 10px;
+        
+    }
+
+    section#hero {
+        background-image: url(../image/hero-portrait.jpg);
+        align-items: stretch;
+        
+    }
+
+    div#section-hero {
+        margin-top: 100px;
+
+    }
+    div#section-hero > h1 {
+        font-size: 2em;
+    }
+
+/*Destinos populares*/
+    #destinos-populares {
+        height: auto;
+    }
+
+    .item {
+        margin: 5px 0px;
+        width: 90%;
+    }
+    div #destinos:hover {
+        
+    }
+
+/*Tabela*/
+    table {
+        display: block;
+        width: 95%;
+    }
+
+    table tbody tr td, table thead tr th {
+        font-size: .8em;
+        border: none;
+    } 
+
+    table tbody tr td:last-child {
+        text-align: justify;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.308);
+
+    }
+
+    thead {
+        background-color: var(--Detalhes-menus-bordas_suaves);
+        color: white;
+    }
+
+/*Video*/
+    iframe {
+        display: block;
+        width: 95%;
+        margin: auto;
+    }
+
+/*Dica de viagens*/
+
+#aviao {
+    display: none;
 }
-*/
+
+#mala {
+    width: 80%;
+    margin: auto;
+}
+
+.order {
+    order: 3;
+}
+
+}
